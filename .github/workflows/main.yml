@@ -7,7 +7,7 @@ jobs:
 
     steps:
       - name: action step
-        uses: jenbeltran/CICD-cats@v1.1
+        uses: jenbeltran/CICD-cats
 
       - name: npm test
         run: npm test
