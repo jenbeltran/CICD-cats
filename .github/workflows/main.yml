@@ -1,13 +1,17 @@
+name: NodeJS CI
+
 on: [push]
 
 jobs:
-  build:
+  testing_cats_array:
     runs-on: ubuntu-latest
-    name: A job to check if cats can be added to an array
-
+    name: A job to test mocha on cats array
     steps:
-      - name: action step
-        uses: jenbeltran/CICD-cats
-
-      - name: npm test
-        run: npm test
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: npm install and npm test
+        run: |
+        npm install
+        npm test
