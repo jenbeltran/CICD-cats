@@ -1,0 +1,35 @@
+{
+  "name": "cicd-cats",
+  "version": "1.0.0",
+  "description": "Project to test out GitHub actions",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha --require @babel/register 'test/**/*.js'",
+    "class": "babel-node class"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenbeltran/CICD-cats.git"
+  },
+  "author": "Jen Beltran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenbeltran/CICD-cats/issues"
+  },
+  "homepage": "https://github.com/jenbeltran/CICD-cats#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/register": "^7.12.10",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5"
+  }
+}
